@@ -9,7 +9,7 @@ Bank Card, Online Wallets, etc. with a secure authentication and authorization m
 
 ## Installation
 1. Get the code
-  * download the compiled artifact [a](a)
+  * download the latest compiled artifact [here](https://github.com/Telepay/Java-SDK/releases/download/v0.9/TelepayApi.jar)
 2. Import the `TelepayApi.jar` in your project
  
  
