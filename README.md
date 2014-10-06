@@ -42,7 +42,8 @@ public class Main {
         Credentials credentials = new UserCredentials(
                 ACCESS_KEY, ACCESS_SECRET
         );
-        TelepayClient tc = new TelepayClient(credentials, "test"); /*"(test|real)", default is "real"*/
+        /*"(test|real)", default is "real"*/
+        TelepayClient tc = new TelepayClient(credentials, "test");
 
         System.out.println("Starting..");
         try {
