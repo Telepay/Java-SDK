@@ -12,8 +12,8 @@ public class TelepayClient {
 
     public TelepayClient(Credentials credentials, String env){
         this.credentials=credentials;
-        if(env.equalsIgnoreCase("real")) this.url = "https://api.telepay.net";
-        else if(env.equalsIgnoreCase("test")) this.url = "https://api.telepay.net/test";
+        if(env.equalsIgnoreCase("real")) this.url = "http://dev-api.telepay.net/app_dev.php";
+        else if(env.equalsIgnoreCase("test")) this.url = "http://dev-api.telepay.net/app_dev.php/test";
         else throw new NullPointerException("Environment should be 'test' or 'real'");
     }
 
@@ -43,4 +43,6 @@ public class TelepayClient {
     public Ukash getUkash(){
         return new Ukash(this.credentials, this.url);
     }
+    public UkashRedemption getUkashRedemption(){ return new UkashRedemption(this.credentials,this.url); }
+    public UkashGenerate getUkashGenerate(){ return new UkashGenerate(this.credentials,this.url);}
 }
